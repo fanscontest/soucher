@@ -1,0 +1,27 @@
+# ── Cruip templates — paid, license forbids redistribution ───────────────────
+templates/
+
+# ── Node / Next.js build artifacts ───────────────────────────────────────────
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# ── Next.js auto-generated ───────────────────────────────────────────────────
+next-env.d.ts
+
+# ── Env files ────────────────────────────────────────────────────────────────
+.env
+.env.local
+.env*.local
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── OS noise ─────────────────────────────────────────────────────────────────
+.DS_Store
