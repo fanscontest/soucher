@@ -1,19 +1,25 @@
 # ── Cruip templates — paid, license forbids redistribution ───────────────────
 templates/
 
-# ── Node / Next.js build artifacts ───────────────────────────────────────────
+# ── Dependencies ─────────────────────────────────────────────────────────────
 node_modules/
+/.pnp
+.pnp.js
+
+# ── Next.js / build artifacts ────────────────────────────────────────────────
 .next/
 out/
 build/
 dist/
-
-# ── Next.js auto-generated ───────────────────────────────────────────────────
+.vercel
+*.tsbuildinfo
 next-env.d.ts
+
+# ── Testing ──────────────────────────────────────────────────────────────────
+/coverage
 
 # ── Env files ────────────────────────────────────────────────────────────────
 .env
-.env.local
 .env*.local
 
 # ── Logs ─────────────────────────────────────────────────────────────────────
@@ -21,7 +27,8 @@ next-env.d.ts
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
+.pnpm-debug.log*
 
-# ── OS noise ─────────────────────────────────────────────────────────────────
+# ── Misc ─────────────────────────────────────────────────────────────────────
 .DS_Store
+*.pem
