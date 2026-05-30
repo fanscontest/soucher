@@ -33,7 +33,7 @@ export default function Hero() {
               </div>
             </div>
             <h1 className="h1 bg-clip-text text-transparent bg-linear-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-10" data-aos="fade-down">Social contests in <span className="bg-clip-text text-transparent bg-linear-to-r from-purple-400 via-purple-300 to-purple-500">YOUR</span> app</h1>
-            <p className="text-lg text-slate-300 mb-8" data-aos="fade-down" data-aos-delay="200">We handle contests, channels, scoring, leaderboards, feeds, and real-time infrastructure while you keep your fans, authentication, and data.</p>
+            <p className="text-lg text-slate-300 mb-8" data-aos="fade-down" data-aos-delay="200">Soucher gives brands the infrastructure to launch interactive social contests directly inside their apps. We handle contests, channels, scoring, leaderboards, rewards, and real-time participation while you keep your users and data.</p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4" data-aos="fade-down" data-aos-delay="400">
               <div>
                 <a className="btn text-slate-900 bg-linear-to-r from-white/80 via-white to-white/80 hover:bg-white w-full transition duration-150 ease-in-out group" href="#">
