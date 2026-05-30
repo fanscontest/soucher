@@ -18,6 +18,10 @@ export default function Particles({
   ease = 50,
   refresh = false
 }: ParticlesProps) {
+  // Disabled — UI was reading too "interstellar". Restore by removing this early return.
+  return null
+
+  // eslint-disable-next-line @typescript-eslint/no-unreachable
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const canvasContainerRef = useRef<HTMLDivElement>(null)
   const context = useRef<CanvasRenderingContext2D | null>(null)

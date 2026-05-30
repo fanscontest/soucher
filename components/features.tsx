@@ -15,7 +15,7 @@ export default function Features() {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* Illustration */}
-        <div className="absolute inset-0 -z-10 -mx-28 rounded-t-[3rem] pointer-events-none overflow-hidden" aria-hidden="true">
+        <div className="absolute inset-0 -z-10 -mx-28 rounded-t-[3rem] pointer-events-none overflow-hidden opacity-50" aria-hidden="true">
           <div className="absolute left-1/2 -translate-x-1/2 top-0 -z-10">
             <Image src={Illustration} className="max-w-none" width={1404} height={658} alt="Features Illustration" />
           </div>

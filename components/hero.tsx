@@ -12,7 +12,7 @@ export default function Hero() {
         <Particles className="absolute inset-0 -z-10" />
 
         {/* Illustration */}
-        <div className="absolute inset-0 -z-10 -mx-28 rounded-b-[3rem] pointer-events-none overflow-hidden" aria-hidden="true">
+        <div className="absolute inset-0 -z-10 -mx-28 rounded-b-[3rem] pointer-events-none overflow-hidden opacity-50" aria-hidden="true">
           <div className="absolute left-1/2 -translate-x-1/2 bottom-0 -z-10">
             <Image src={Illustration} className="max-w-none" width={2146} priority alt="Hero Illustration" />
           </div>
@@ -23,7 +23,7 @@ export default function Hero() {
           {/* Hero content */}
           <div className="max-w-3xl mx-auto text-center">
             <div className="mb-20" data-aos="fade-down">
-              <div className="inline-flex relative before:absolute before:inset-0 before:bg-purple-500 before:blur-2xl before:opacity-70 before:rounded-full">
+              <div className="inline-flex relative before:absolute before:inset-0 before:bg-purple-500 before:blur-2xl before:opacity-40 before:rounded-full">
                 <a className="relative inline-flex items-center gap-3 pl-4 pr-6 py-2.5 rounded-full text-base font-medium text-slate-100 hover:text-white transition duration-150 ease-in-out group border border-transparent shadow-xl shadow-purple-500/30 [background:linear-gradient(var(--color-slate-900),var(--color-slate-900))_padding-box,linear-gradient(var(--color-purple-400),var(--color-purple-300)_50%,var(--color-purple-500)_100%)_border-box]" href="#showcase">
                   <Image src={FansContestLogo} width={32} height={32} alt="Fans Contest" className="rounded-lg" priority />
                   <span>Now powering Fans Contest</span>
