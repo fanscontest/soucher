@@ -25,10 +25,10 @@ export default function Home() {
       <Stats />
       {/* <Clients /> */}
       <Features />
+      <TestimonialsCarousel />
       <Showcase />
       <Features02 />
       {/* <Features03 /> */}
-      <TestimonialsCarousel />
       <Features04 />
       <Pricing />
       <Testimonials />

@@ -26,7 +26,6 @@ export default function Hero() {
               <div className="inline-flex relative before:absolute before:inset-0 before:bg-purple-500 before:blur-2xl before:opacity-70 before:rounded-full">
                 <a className="relative inline-flex items-center gap-3 pl-4 pr-6 py-2.5 rounded-full text-base font-medium text-slate-100 hover:text-white transition duration-150 ease-in-out group border border-transparent shadow-xl shadow-purple-500/30 [background:linear-gradient(var(--color-slate-900),var(--color-slate-900))_padding-box,linear-gradient(var(--color-purple-400),var(--color-purple-300)_50%,var(--color-purple-500)_100%)_border-box]" href="#showcase">
                   <Image src={FansContestLogo} width={32} height={32} alt="Fans Contest" className="rounded-lg" priority />
-                  <span className="text-xs uppercase tracking-wider text-purple-300">Live</span>
                   <span>Now powering Fans Contest</span>
                   <span className="tracking-normal text-purple-300 group-hover:translate-x-1 transition-transform duration-150 ease-in-out">→</span>
                 </a>
