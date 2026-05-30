@@ -1,46 +1,62 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import Image, { StaticImageData } from 'next/image'
 import { Transition } from '@headlessui/react'
 import Particles from './particles'
 
-import TestimonialImg01 from '@/public/images/testimonial-01.jpg'
-import TestimonialImg02 from '@/public/images/testimonial-02.jpg'
-import TestimonialImg03 from '@/public/images/testimonial-03.jpg'
-
 interface Item {
-  img: StaticImageData
   quote: string
   name: string
   role: string
 }
 
+const initials = (name: string) =>
+  name
+    .split(' ')
+    .map((w) => w[0])
+    .slice(0, 2)
+    .join('')
+    .toUpperCase()
+
+const titleCase = (name: string) =>
+  name
+    .toLowerCase()
+    .split(' ')
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ')
+
 export default function Testimonials() {
 
   const [active, setActive] = useState<number>(0)
   const [autorotate, setAutorotate] = useState<boolean>(true)
-  const [autorotateTiming] = useState<number>(7000)
+  const [autorotateTiming] = useState<number>(8000)
 
   const items: Item[] = [
     {
-      img: TestimonialImg01,
-      quote: "The ability to capture responses is a game-changer. If a user gets tired of the sign up and leaves, that data is still persisted. Additionally, it's great to be able to select between formats.ture responses is a game-changer.",
-      name: 'Jessie J',
-      role: 'Ltd Head of Product'
+      quote: "I am recommending this app because of its value-adding contests, swift scoring system, and amazing rewards. User Interface is quite friendly.",
+      name: titleCase('SHADRACH CHUKWUEMEKA'),
+      role: 'via Google Play',
     },
     {
-      img: TestimonialImg02,
-      quote: "I have been using this product for a few weeks now and I am blown away by the results. My skin looks visibly brighter and smoother, and I have received so many compliments on my complexion.",
-      name: 'Mark Luk',
-      role: 'Spark Founder & CEO'
+      quote: "Fans Contest is more than an app, it's an impressive initiative, hosting the combination of fun, thrill, education and wins in one platform. Kudos!",
+      name: titleCase('OLATEJU BENJAMIN'),
+      role: 'via Google Play',
     },
     {
-      img: TestimonialImg03,
-      quote: "As a busy professional, I don't have a lot of time to devote to working out. But with this fitness program, I have seen amazing results in just a few short weeks. The workouts are efficient and effective.",
-      name: 'Jeff Kahl',
-      role: 'Appy Product Lead'
-    }
+      quote: "This is an excellent app to challenge your knowledge while getting rewarded. It covers various aspects, including languages (Yoruba, Igbo), General Knowledge, Islamic Studies and other subjects.",
+      name: 'Soliu Badmus',
+      role: 'via Google Play',
+    },
+    {
+      quote: "The best app for competitions.",
+      name: 'Osita Isibor',
+      role: 'via Google Play',
+    },
+    {
+      quote: "I love what you guys are doing.",
+      name: 'Stanley Somto',
+      role: 'via Google Play',
+    },
   ]
 
   const testimonials = useRef<HTMLDivElement>(null)
@@ -59,7 +75,7 @@ export default function Testimonials() {
 
   useEffect(() => {
     heightFix()
-  }, [])  
+  }, [])
 
   return (
     <section>
@@ -68,12 +84,12 @@ export default function Testimonials() {
 
           {/* Particles animation */}
           <div className="absolute left-1/2 -translate-x-1/2 top-0 -z-10 w-80 h-80 -mt-6">
-            <Particles className="absolute inset-0 -z-10" quantity={10} staticity={40} /> 
+            <Particles className="absolute inset-0 -z-10" quantity={10} staticity={40} />
           </div>
 
           {/* Carousel */}
           <div className="text-center">
-            {/* Testimonial image */}
+            {/* Initial-letter avatar */}
             <div className="relative h-32 [mask-image:linear-gradient(0deg,transparent,var(--color-white)_40%,var(--color-white))]">
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[480px] h-[480px] -z-10 pointer-events-none before:rounded-full rounded-full before:absolute before:inset-0 before:bg-linear-to-b before:from-slate-400/20 before:to-transparent before:to-20% after:rounded-full after:absolute after:inset-0 after:bg-slate-900 after:m-px before:-z-20 after:-z-20">
 
@@ -85,8 +101,13 @@ export default function Testimonials() {
                     className={`absolute inset-0 h-full -z-10 transform transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] data-closed:absolute data-enter:data-closed:-rotate-[60deg] data-leave:data-closed:rotate-[60deg] data-closed:opacity-0 data-enter:duration-700 data-leave:duration-300`}
                     unmount={false}
                     appear={true}
-                  >                  
-                    <Image className="relative top-11 left-1/2 -translate-x-1/2 rounded-full" src={item.img} width={56} height={56} alt={item.name} />
+                  >
+                    <div
+                      aria-label={item.name}
+                      className="relative top-11 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full flex items-center justify-center bg-slate-800 border border-slate-700 text-slate-100 font-semibold text-sm shadow-lg shadow-purple-500/10"
+                    >
+                      {initials(item.name)}
+                    </div>
                   </Transition>
                 ))}
 
@@ -122,6 +143,19 @@ export default function Testimonials() {
                 </button>
               ))}
 
+            </div>
+
+            {/* Verifiability link */}
+            <div className="mt-8">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.fanscontest"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-sm text-slate-400 hover:text-purple-300 transition duration-150 ease-in-out group"
+              >
+                See more on Google Play
+                <span className="tracking-normal text-purple-400 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">→</span>
+              </a>
             </div>
           </div>
 

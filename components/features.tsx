@@ -21,7 +21,7 @@ export default function Features() {
           </div>
         </div>
 
-        <div className="pt-16 pb-12 md:pt-52 md:pb-20">
+        <div className="pt-16 pb-12 md:pt-[120px] md:pb-20">
 
           <div>
 
