@@ -18,7 +18,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="pt-[174px] pb-16 md:pt-[190px] md:pb-32">
+        <div className="pt-[144px] pb-16 md:pt-[160px] md:pb-32">
 
           {/* Hero content */}
           <div className="max-w-3xl mx-auto text-center">
