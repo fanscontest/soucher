@@ -16,6 +16,7 @@ import Features04 from '@/components/features-04'
 import Pricing from './pricing-section'
 import Testimonials from '@/components/testimonials'
 import Faqs from '@/components/faqs'
+import Contact from '@/components/contact'
 import Cta from '@/components/cta'
 
 export default function Home() {
@@ -33,6 +34,7 @@ export default function Home() {
       <Pricing />
       <Testimonials />
       <Faqs />
+      <Contact />
       <Cta />
     </>
   )
