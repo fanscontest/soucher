@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Logo from './logo'
+import ContactEmail from './contact-email'
 
 export default function Footer() {
   return (
@@ -17,6 +18,10 @@ export default function Footer() {
                   <Logo />
                 </div>
                 <div className="text-sm text-slate-400 max-w-sm">The contest platform brands integrate to run social contests for their fans.</div>
+                <div className="mt-3 text-sm text-slate-400">
+                  Contact us:{' '}
+                  <ContactEmail className="text-purple-500 hover:text-purple-400 transition duration-150 ease-in-out" />
+                </div>
               </div>
               <ul className="flex mt-4 sm:mt-0">
                 <li>
