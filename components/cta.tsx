@@ -1,6 +1,8 @@
+import ContactEmail from '@/components/ui/contact-email'
+
 export default function Cta() {
   return (
-    <section>
+    <section id="contact" className="scroll-mt-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="relative px-8 py-12 md:py-20 rounded-[3rem] overflow-hidden">
           {/* Radial gradient */}
@@ -23,14 +25,12 @@ export default function Cta() {
           {/* Content */}
           <div className="max-w-3xl mx-auto text-center">
             <div>
-              <div className="inline-flex font-medium bg-clip-text text-transparent bg-linear-to-r from-purple-500 to-purple-200 pb-3">Ready to start?</div>
+              <div className="inline-flex font-medium bg-clip-text text-transparent bg-linear-to-r from-purple-500 to-purple-200 pb-3">Talk to us</div>
             </div>
-            <h2 className="h2 bg-clip-text text-transparent bg-linear-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">Ship your first contest this sprint.</h2>
-            <p className="text-lg text-slate-400 mb-8">Apply for a private-beta tenant. Keys in days. Integrated within a sprint.</p>
+            <h2 className="h2 bg-clip-text text-transparent bg-linear-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">Questions? We'd love to hear from you.</h2>
+            <p className="text-lg text-slate-400 mb-8">Tell us about your fans, your contests, and your timeline — or just say hello. Reach us any time at:</p>
             <div>
-              <a className="btn text-slate-900 bg-linear-to-r from-white/80 via-white to-white/80 hover:bg-white transition duration-150 ease-in-out group" href="#">
-                Apply for keys <span className="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
-              </a>
+              <ContactEmail className="inline-flex text-xl md:text-2xl font-medium text-purple-300 hover:text-white transition duration-150 ease-in-out" />
             </div>
           </div>
         </div>
