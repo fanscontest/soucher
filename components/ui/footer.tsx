@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Logo from './logo'
+import ContactEmail from './contact-email'
 
 export default function Footer() {
   return (
@@ -17,6 +18,10 @@ export default function Footer() {
                   <Logo />
                 </div>
                 <div className="text-sm text-slate-400 max-w-sm">The contest platform brands integrate to run social contests for their fans.</div>
+                <div className="mt-3 text-sm text-slate-400">
+                  Contact us:{' '}
+                  <ContactEmail className="text-purple-500 hover:text-purple-400 transition duration-150 ease-in-out" />
+                </div>
               </div>
               <ul className="flex mt-4 sm:mt-0">
                 <li>
@@ -58,7 +63,7 @@ export default function Footer() {
             <h6 className="text-sm text-slate-50 font-medium mb-2">Resources</h6>
             <ul className="text-sm space-y-2">
               <li>
-                <a className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="#">Apply for keys</a>
+                <a className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/#contact">Apply for keys</a>
               </li>
               <li>
                 <a className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="#">Status</a>
