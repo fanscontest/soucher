@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Particles from './particles'
+import WordRotator from './word-rotator'
 import Illustration from '@/public/images/glow-bottom.svg'
 import FansContestLogo from '@/public/images/logo.png'
 
@@ -31,7 +32,12 @@ export default function Hero() {
                 </a>
               </div>
             </div>
-            <h1 className="h1 bg-clip-text text-transparent bg-linear-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-10" data-aos="fade-down">Social contests in <span className="bg-clip-text text-transparent bg-linear-to-r from-purple-400 via-purple-300 to-purple-500">YOUR</span> app</h1>
+            <h1 className="h1 bg-clip-text text-transparent bg-linear-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-10" data-aos="fade-down">Social contests in <span className="bg-clip-text text-transparent bg-linear-to-r from-purple-400 via-purple-300 to-purple-500">YOUR</span>{' '}
+              <WordRotator
+                words={['app', 'store', 'community']}
+                className="bg-clip-text text-transparent bg-linear-to-r from-purple-400 via-purple-300 to-purple-500"
+              />
+            </h1>
             <p className="text-lg text-slate-300 mb-3" data-aos="fade-down" data-aos-delay="200">We provide the infrastructure for brands to host contests directly inside their apps.</p>
             <p className="text-lg text-slate-300 mb-8" data-aos="fade-down" data-aos-delay="300">We handle contests, channels, scoring, leaderboards, and real-time participation while you keep your users, authentication and data.</p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4" data-aos="fade-down" data-aos-delay="400">
