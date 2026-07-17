@@ -34,7 +34,7 @@ export default function Hero() {
             </div>
             <h1 className="h1 bg-clip-text text-transparent bg-linear-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-10" data-aos="fade-down">Social contests in <span className="bg-clip-text text-transparent bg-linear-to-r from-purple-400 via-purple-300 to-purple-500">YOUR</span>{' '}
               <WordRotator
-                words={['app', 'shop', 'community', 'events']}
+                words={['app', 'shop', 'events', 'community']}
                 className="bg-clip-text text-transparent bg-linear-to-r from-purple-400 via-purple-300 to-purple-500"
               />
             </h1>
