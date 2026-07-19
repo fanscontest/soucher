@@ -7,7 +7,7 @@ const faqs = [
   },
   {
     q: 'How do you sign webhooks?',
-    a: 'Every webhook is signed with HMAC-SHA256 using a per-tenant secret. The signature ships in an X-Soucher-Signature header — verify before you trust. Replay attacks are blocked by per-event idempotency keys.',
+    a: 'Every webhook is signed with HMAC-SHA256 using a per-tenant secret. The signature ships in an X-FC-Signature header — verify before you trust. Replay attacks are blocked by per-event idempotency keys.',
   },
   {
     q: 'Do you store any personal information about my fans?',

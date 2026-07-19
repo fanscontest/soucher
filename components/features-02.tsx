@@ -21,7 +21,7 @@ export default function Features02() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 bg-clip-text text-transparent bg-linear-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">Move fast. Sleep at night.</h2>
-            <p className="text-lg text-slate-400">Three guarantees that make Soucher safe to plug into production — a typed public API, hardened webhook delivery, and tenant isolation that's never an opt-in.</p>
+            <p className="text-lg text-slate-400">Three guarantees that make Qaragon safe to plug into production — a typed public API, hardened webhook delivery, and tenant isolation that's never an opt-in.</p>
           </div>
 
           {/* Highlighted boxes */}

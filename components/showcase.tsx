@@ -20,10 +20,10 @@ export default function Showcase() {
                 Featured customer
               </div>
               <h2 className="h2 bg-clip-text text-transparent bg-linear-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">
-                Fans Contest runs every contest on Soucher.
+                Fans Contest runs every contest on Qaragon.
               </h2>
               <p className="text-lg text-slate-400 mb-8">
-                Live prediction games, quizzes, and tournaments for sports fans across iOS and Android — built end-to-end on the Soucher API.
+                Live prediction games, quizzes, and tournaments for sports fans across iOS and Android — built end-to-end on the Qaragon API.
               </p>
 
               {/* App store badges */}
