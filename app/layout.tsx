@@ -10,8 +10,8 @@ const inter = Inter({
 
 export const metadata = {
   title: {
-    default: 'Soucher — the contest platform for your fans',
-    template: '%s · Soucher',
+    default: 'Qaragon — the contest platform for your fans',
+    template: '%s · Qaragon',
   },
   description: 'The contest platform brands integrate to run social contests for their fans. Tenant API keys, signed webhooks, identity primitives, prize logistics — without rebuilding the engine.',
 }

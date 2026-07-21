@@ -12,13 +12,13 @@ export default function ContactEmail({ className }: { className?: string }) {
   const [address, setAddress] = useState('')
 
   useEffect(() => {
-    setAddress(['contact', 'soucher.com'].join('@'))
+    setAddress(['contact', 'qaragon.com'].join('@'))
   }, [])
 
   if (!address) {
     return (
       <span className={className}>
-        contact <span aria-hidden="true">[at]</span> soucher{' '}
+        contact <span aria-hidden="true">[at]</span> qaragon{' '}
         <span aria-hidden="true">[dot]</span> com
       </span>
     )

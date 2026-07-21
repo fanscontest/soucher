@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Pricing',
-  description: 'Plans for brands running social contests on Soucher.',
+  description: 'Plans for brands running social contests on Qaragon.',
 }
 
 import PricingSection from './pricing-section'

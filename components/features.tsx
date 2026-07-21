@@ -82,14 +82,14 @@ export default function Features() {
                     {/* Snippet */}
                     <div className="font-mono text-xs leading-relaxed text-slate-300 overflow-x-auto">
                       {tab === 1 && (
-                        <pre className="p-5 whitespace-pre">{`$ curl https://api.soucher.com/v2/platform/identities \\
+                        <pre className="p-5 whitespace-pre">{`$ curl https://api.qaragon.com/v2/platform/identities \\
     -H "Authorization: Bearer fcn_live_..." \\
     -d tenant_user_id="user_42" \\
     -d display_name="Alex M." \\
     -d country="GB"`}</pre>
                       )}
                       {tab === 2 && (
-                        <pre className="p-5 whitespace-pre">{`$ curl https://api.soucher.com/v2/contests \\
+                        <pre className="p-5 whitespace-pre">{`$ curl https://api.qaragon.com/v2/contests \\
     -H "Authorization: Bearer fcn_live_..." \\
     -d title="Predict the Final" \\
     -d type="prediction" \\
@@ -97,7 +97,7 @@ export default function Features() {
                       )}
                       {tab === 3 && (
                         <pre className="p-5 whitespace-pre">{`// POST → https://your-app.com/webhooks
-// X-Soucher-Signature: t=...,v1=...
+// X-FC-Signature: t=...,v1=...
 
 {
   "event": "contest.winners.selected",

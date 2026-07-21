@@ -90,7 +90,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-800 py-6 text-sm text-slate-500">
-          © {new Date().getFullYear()} Soucher. All rights reserved.
+          © {new Date().getFullYear()} Qaragon. All rights reserved.
         </div>
 
       </div>
